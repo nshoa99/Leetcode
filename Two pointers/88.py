@@ -15,7 +15,4 @@ class Solution(object):
             k -=1
             
         if j >= 0:
-            nums1[:j + 1] = nums2[: j + 1]
-                    
-        
-        
+            nums1[:j + 1] = nums2[:j + 1]

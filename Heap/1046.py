@@ -31,7 +31,7 @@ def lastStoneWeight(stones):
     heap = [-x for x in stones]
     heapq.heapify(heap)                     # O(n)
     while len(heap) > 1 and heap[0] != 0:   # O(n)
-        heapq.heappush(heap, heapq.heappop(heap) - heapq.heappushpop(heap))     O(log(n))
+        heapq.heappush(heap, heapq.heappop(heap) - heapq.heappushpop(heap))     # O(log(n))
     return -heap[0]
 
 # time complexity O(n), Extra space complexity O(n)

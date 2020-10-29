@@ -38,7 +38,6 @@ print(aTree)
 
 # min value
 print(aTree[0])
-
 # Time complexity O(1)
 
 ### Add a new value to a heap 
@@ -111,4 +110,7 @@ heapq.heapify(aTree)
 print(aTree)
 
 heapq.heappush(aTree, -10)
+print(aTree)
+
+heapq.heappop(aTree)
 print(aTree)
