@@ -25,7 +25,8 @@ The length of both nums1 and nums2 would not exceed 1000.
 
 def nextGreaterElement(nums1, nums2):
     finals = [-1] * len(nums1)                              # Space O(n)
-    mapping = {nums1[i]: i for i in range(len(nums1))}      # Space O(n)
+    # mapping, key = value, value of dic = index 
+    mapping = {nums1[i]: i for i in range(len(nums1))}      # Space O(n) 
     stack = []                                              # Space O(n)
     i = 0
     while i < len(nums2):                                   # Time complexity O(n)
