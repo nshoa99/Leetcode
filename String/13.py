@@ -18,5 +18,6 @@ class Solution(object):
                 
         if i == n - 1:
             total += aDict[s[i]]
+            
         return total
            
